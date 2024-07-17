@@ -1,0 +1,342 @@
+@import url("https://fonts.googleapis.com"); 
+@import url("https://fonts.googleapis.com");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: white;
+  font-family: "Roboto Condensed", sans-serif;
+  color: #216170;
+  height: 100vh;
+}
+
+#Bagian_Utama {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; 
+  height: 100%;
+}
+
+#Navbar {
+  overflow: hidden;
+  background-color: #6CE5E8;
+  padding: 40px 10px; 
+  transition: 0.4s;
+  width: 100%;
+  position: sticky;
+  top: 0;
+  z-index: 99;
+}
+
+#Navbar a {
+  color: #216170;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 35.7px;
+  font-weight: 600; 
+  line-height: 25px;
+  border-radius: 4px;
+  margin-right: 20px;
+}
+
+#Navbar #logo1 {
+  font-size: 48px;
+  font-family: "Roboto Condensed", sans-serif;
+  color: #216170;
+  font-weight: bold;
+  transition: 0.4s;
+  margin-right: 40px; 
+}
+
+#Kamera {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 16px;
+}
+
+#preview1, #grafick_JSON, #outputOfpreview {
+  flex: 1;
+  margin: 10px;
+}
+
+#outputOfpreview {
+  background-color: #216170;
+  width: 300px;
+  height: 200px;
+}
+
+#Tombol {
+  display: flex;
+  justify-content: center; 
+  margin-top: 2px; 
+}
+
+#button {
+  border: none;
+  border-radius: 12px;
+  background-color: #2D7F8E;
+  color: white;
+  font-size: 26px;
+  font-weight: 700;
+  width: 190px; 
+  height: 64px; 
+  display: block;
+  margin-left: 16px;
+  font-family: "Roboto", sans-serif;
+}
+
+#main-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+#top-section {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1200px;
+  margin-bottom: 20px;
+}
+
+
+#summary-section {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1200px;
+  margin-bottom: 20px;
+}
+
+#STIV_MEAS, #DISC_MEAS {
+  flex: 1;
+  background-color: #6CE5E8;
+  padding: 20px;
+  border-radius: 36px;
+  margin: 0 10px;
+}
+
+#Label_STIV_MEAS, #Label_DISC_MEAS {
+  display: block;
+  text-align: center;
+  margin-bottom: 10px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+
+.measurement, .measurement1  {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto;
+  gap: 10px;
+  width: 100%;
+  justify-items: center;
+  align-items: center;
+}
+
+.measurement, .measurement1 h3 {
+  margin: 0;
+  padding: 5px;
+  text-align: center;
+  font-size: 16px; 
+  overflow-wrap: break-word;
+  word-break: break-word;
+}
+
+.measurement .measurement1 h3 p {
+  margin: 5px 0 0 0;
+  font-size: 20px; 
+  font-weight: bold;
+}
+
+#Water_Level, #Tot_Dis {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+}
+
+#Max_Surface_Velocit, #Tot_Area {
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+}
+
+#Avg_Surface_Velocit, #Cross_Avg {
+  grid-column: 1 / 3;
+  grid-row: 2 / 3;
+}
+
+.measurement, .measurement1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  width: 100%;
+}
+
+.measurement h3, .measurement1 h3 {
+  text-align: center;
+  font-size: 16px;
+}
+
+.measurement h3 p, .measurement1 h3 p {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+#Not_Title {
+  flex: 1;
+  background-color: #6CE5E8;
+  padding: 20px;
+  border-radius: 36px;
+  margin: 20px 0;
+}
+
+#measurement2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  width: 100%;
+}
+
+#measurement2 h3 {
+  text-align: center;
+  font-size: 16px;
+}
+
+#measurement2 h3 p {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+#Table {
+  width: 100%;
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #f0f0f0;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+  overflow: hidden; 
+}
+
+#Table th, #Table td {
+  padding: 15px; 
+  border-bottom: 1px solid #ddd; 
+  text-align: left; 
+}
+
+#Table th {
+  background-color: #eee; 
+  font-weight: bold; 
+}
+
+#Table tr:nth-child(even) {
+  background-color: #f7f7f7; 
+}
+
+
+main-content {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  justify-items: center;
+}
+
+#summary-section {
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+#measurement-section {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1200px;
+  margin-bottom: 20px;
+}
+
+.measurement-container {
+  flex: 1;
+  background-color: #6CE5E8;
+  padding: 20px;
+  border-radius: 10px;
+  margin-right: 20px;
+}
+
+#Not_Title {
+  flex: 1;
+  background-color: #6CE5E8;
+  padding: 20px;
+  border-radius: 10px;
+  margin: 20px 0;
+}
+
+#Table {
+  width: 100%;
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #f0f0f0;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+#Table th,
+#Table td {
+  padding: 15px;
+  border-bottom: 1px solid #ddd;
+  text-align: left;
+}
+
+#Table th {
+  background-color: #eee;
+  font-weight: bold;
+}
+
+#Table tr:nth-child(even) {
+  background-color: #f7f7f7;
+}
+
+@media (min-width: 768px) {
+  #main-content {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .measurement-container {
+    margin-bottom: 20px;
+  }
+}
+
+/* Setting Warna untuk setiap tombol CSS */
+#Water_Level , #Max_Surface_Velocit ,#Avg_Surface_Velocit , #Tot_Dis, #Tot_Area,
+#Cross_Avg {
+  border-style: solid;
+  border: none;
+  border-radius: 30px;
+  width: 200px;
+  height: 59px;
+  padding: 10px;
+  color: white;
+  background-color: #216170;
+}
+
+#Method_DeepL, #DISC_Area {
+  border-style: solid;
+  border: none;
+  border-radius: 30px;
+  width: 200px;
+  height: 95px;
+  padding: 10px;
+  color: white;
+  background-color: #216170;
+}
